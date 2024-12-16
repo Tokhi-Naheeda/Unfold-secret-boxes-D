@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding:0;
+    overflow:hidden;
+}
+.message{
+    width:100vw;
+    height:100vh;
+}
+p{
+    font-size: 80px;
+    position: absolute;
+    left:46vw;
+    top:33vh;
+}
+.box{
+    position: relative;
+    width:400px;
+    height:400px;
+    left:38vw;
+    top: 26vh;
+
+
+}
+.child-box{
+    position: absolute;
+    width:200px;
+    height:200px; 
+    transition:transform 1s ease;
+
+}
+
+.left-box-1{
+    background-color: rgb(70, 130, 180);
+    left: 0;
+    top: 0;
+}
+.left-box-2{
+    background-color: rgb(255, 255, 0);
+    left: 0;
+    bottom: 0;
+}
+.right-box-1{
+    background-color: rgb(105, 105, 105);
+    right: 0;
+    top: 0;
+}
+.right-box-2{
+    background-color: rgb(188, 143, 143);
+    right: 0;
+    bottom: 0;
+}
+.box:hover .left-box-1{
+    transform: rotate(90deg) translateY(200px);
+}
+.box:hover .left-box-2{
+    transform: rotate(90deg) translateY(200px);
+}
+.box:hover .right-box-1{
+    transform: rotate(-90deg) translateY(200px);
+}
+.box:hover .right-box-2{
+    transform: rotate(-90deg)  translateY(200px);
+}
+
